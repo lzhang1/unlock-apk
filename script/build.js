@@ -63,7 +63,6 @@ JAVA_HOME.getPath(function(error, javaHome) {
     if (code !== 0) {
       throw 'build failed';
     }
-    callback();
   });
 
 });
