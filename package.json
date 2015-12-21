@@ -1,13 +1,10 @@
 {
   "name": "unlock-apk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "unlock-apk",
   "keywords": [
     "unlock-apk"
   ],
-  "bin": {
-    "unlock-apk": "./bin/unlock-apk"
-  },
   "main": "index.js",
   "repository": {
     "type": "git",
