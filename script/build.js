@@ -20,6 +20,7 @@ var _ = require('../lib/helper');
 var spawn = require('win-spawn');
 //var Build = require('java-build');
 var JAVA_HOME = require('java-home');
+var ant = require('ant-lite').binPath;
 
 var isWindows = _.platform.isWindows;
 var cwd = path.join(__dirname, '..');
@@ -36,13 +37,7 @@ JAVA_HOME.getPath(function(error, javaHome) {
     throw 'ANDROID_HOME is not set';
   }
 
-  var cmd = path.join(__dirname, 'ant', 'bin', 'ant');
-
-  if (isWindows) {
-    cmd = cmd + '.bat';
-  }
-
-  var process = spawn(cmd, ['debug'], {
+  var process = spawn(ant, ['debug'], {
     cwd: cwd
   });
   process.on('error', function(err) {
