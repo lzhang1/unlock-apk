@@ -27,14 +27,16 @@ var cwd = path.join(__dirname, '..');
 
 JAVA_HOME.getPath(function(error, javaHome) {
   if (error) {
-    throw 'JAVA_HOME is not set';
+    //throw 'JAVA_HOME is not set';
+    console.log('JAVA_HOME is not set');
   }
   console.log('JAVA_HOME is set to ' + javaHome);
 
   var env = global.process.env;
 
   if (!env.ANDROID_HOME) {
-    throw 'ANDROID_HOME is not set';
+    //throw 'ANDROID_HOME is not set';
+    console.log('ANDROID_HOME is not set');
   }
 
   var process = spawn(ant, ['debug'], {
