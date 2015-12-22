@@ -41,7 +41,8 @@ JAVA_HOME.getPath(function(error, javaHome) {
     cwd: cwd
   });
   process.on('error', function(err) {
-    throw err;
+    //throw err;
+    console.log(err);
   });
 
   process.stdout.setEncoding('utf8');
@@ -56,7 +57,8 @@ JAVA_HOME.getPath(function(error, javaHome) {
 
   process.on('exit', function(code) {
     if (code !== 0) {
-      throw 'build failed';
+      //throw 'build failed';
+      console.log('build failed');
     }
   });
 
