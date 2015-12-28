@@ -1,6 +1,6 @@
 {
   "name": "unlock-apk",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "unlock-apk",
   "keywords": [
     "unlock-apk"
@@ -13,6 +13,7 @@
   "dependencies": {
     "ant-lite": "~0.1.0",
     "java-home": "~1.0.1",
+    "lodash": "~3.10.1",
     "win-spawn": "~2.0.0"
   },
   "devDependencies": {
