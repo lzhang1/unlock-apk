@@ -17,7 +17,6 @@
 
 var fs = require('fs');
 var path = require('path');
-var EOL = require('os').EOL;
 var _ = require('../lib/helper');
 var spawn = require('win-spawn');
 //var Build = require('java-build');
@@ -71,7 +70,7 @@ JAVA_HOME.getPath(function(error, javaHome) {
   var properties = fs.readFileSync(propertyFile, 'utf8');
 
   properties = properties.split('target=')[0];
-  properties += EOL + 'target=' + sdkVersion[sdkVersion.length - 1];
+  properties += 'target=' + sdkVersion[sdkVersion.length - 1];
 
   fs.writeFileSync(propertyFile, properties);
 
