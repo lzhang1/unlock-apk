@@ -66,6 +66,10 @@ JAVA_HOME.getPath(function(error, javaHome) {
 
   var sdkVersion = selectAndroidSdkSync();
 
+  if (!sdkVersion) {
+    return;
+  }
+
   var propertyFile = path.join(__dirname, '..', 'project.properties');
   var properties = fs.readFileSync(propertyFile, 'utf8');
 
