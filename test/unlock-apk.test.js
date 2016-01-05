@@ -13,8 +13,8 @@
 
 'use strict';
 
-var unlock-apk = require('..');
+var unlockApk = require('..');
 
 describe('test', function() {
-
+  unlockApk.apkPath.should.be.ok;
 });
