@@ -16,5 +16,7 @@
 var unlockApk = require('..');
 
 describe('test', function() {
-  unlockApk.apkPath.should.be.ok;
+  it('should be ok', function() {
+    unlockApk.apkPath.should.be.ok;
+  });
 });
