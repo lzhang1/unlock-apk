@@ -1,6 +1,6 @@
 {
   "name": "unlock-apk",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "unlock apk",
   "keywords": [
     "unlock"
@@ -11,7 +11,7 @@
     "url": "git://github.com/xudafeng/unlock-apk.git"
   },
   "dependencies": {
-    "ant-build": "^0.1.0"
+    "ant-build": "~1.0.0"
   },
   "devDependencies": {
     "co-mocha": "*",
